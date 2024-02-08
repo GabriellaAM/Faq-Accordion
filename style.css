@@ -1,3 +1,5 @@
+/* Page body */
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
 * {
@@ -14,17 +16,6 @@ html, body {
     background-color: hsl(275, 100%, 97%);
 }
 
-.container {
-    min-height: 200px;
-    position: relative;
-    padding-top: 200px;
-    width: 100%;
-    background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
-    order: 1;
-    position: relative;
-
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -39,6 +30,20 @@ html, body {
     padding: 0;
 }
 
+/* Header */
+
+.container {
+    min-height: 200px;
+    position: relative;
+    padding-top: 200px;
+    width: 100%;
+    background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    order: 1;
+    position: relative;
+
+}
+
+/* Card */
 
 .faqs {
     display: grid;
@@ -58,6 +63,43 @@ html, body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     position: relative;
     order: 2;
+}
+
+/* Footer */
+
+.attribution {
+    width: 100%;
+    display: flex;
+    font-size: 11px;
+    background: none;
+    justify-content: center;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    bottom: 0;
+    height: 100%;
+    order: 3;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* Card elements */
+
+.estrela {
+    grid-area: star;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.estrela img {
+    margin: 0;
+    width: 20px;
 }
 
 .titulo {
@@ -83,6 +125,8 @@ h2 {
     color: hsl(292, 42%, 14%);
 }
 
+/* Card questions and answers */
+
 .quest1 {
     grid-area: q1;
     overflow: hidden;
@@ -94,14 +138,9 @@ h2 {
     margin-bottom: 10px; 
 }
 
-.quest1.active .resp1 p {
-    overflow: hidden;
-    margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+.resp1 {
+    padding-bottom: 5px;
 }
-
 
 .resp1 p {
     overflow: hidden;
@@ -110,8 +149,12 @@ h2 {
     transition: height 0.7s ease-out;
 }
 
-.resp1 {
-    padding-bottom: 5px;
+.quest1.active .resp1 p {
+    overflow: hidden;
+    margin: 0;
+    height: max(170px); 
+    transition-duration: 1700ms;
+    transition: height 0.7s ease-out; 
 }
 
 .quest2 {
@@ -125,14 +168,9 @@ h2 {
     margin-bottom: 10px; 
 }
 
-.quest2.active .resp2 p {
-    overflow: hidden;
-    margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+.resp2 {
+    padding-bottom: 20px;
 }
-
 
 .resp2 p {
     overflow: hidden;
@@ -141,8 +179,12 @@ h2 {
     transition: height 0.7s ease-out;
 }
 
-.resp2 {
-    padding-bottom: 20px;
+.quest2.active .resp2 p {
+    overflow: hidden;
+    margin: 0;
+    height: max(170px); 
+    transition-duration: 1700ms;
+    transition: height 0.7s ease-out; 
 }
 
 .quest3 {
@@ -156,14 +198,9 @@ h2 {
     margin-bottom: 10px; 
 }
 
-.quest3.active .resp3 p {
-    overflow: hidden;
-    margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+.resp3 {
+    padding-bottom: 10px;
 }
-
 
 .resp3 p {
     overflow: hidden;
@@ -172,8 +209,12 @@ h2 {
     transition: height 0.7s ease-out;
 }
 
-.resp3 {
-    padding-bottom: 10px;
+.quest3.active .resp3 p {
+    overflow: hidden;
+    margin: 0;
+    height: max(170px); 
+    transition-duration: 1700ms;
+    transition: height 0.7s ease-out; 
 }
 
 .quest4 {
@@ -184,6 +225,16 @@ h2 {
     padding: 0;
 }
 
+.resp4 {
+    padding-bottom: 10px;
+}
+
+.resp4 p {
+    overflow: hidden;
+    height: 0;
+    padding-top: 10px;
+    transition: height 0.7s ease-out;
+}
 .quest4.active .resp4 p {
     overflow: hidden;
     margin: 0;
@@ -192,17 +243,7 @@ h2 {
     transition: height 0.7s ease-out; 
 }
 
-
-.resp4 p {
-    overflow: hidden;
-    height: 0;
-    padding-top: 10px;
-    transition: height 0.7s ease-out;
-}
-
-.resp4 {
-    padding-bottom: 10px;
-}
+/* Card buttons */
 
 .botãomais1 {
     display: flex;
@@ -214,14 +255,6 @@ h2 {
     margin-top: 17px;
 }
 
-.botãomais1.first {
-    margin-top: -3px;
-}
-
-.botãomais1.third {
-    margin-top: 20px;
-}
-
 .botãomais1 button {
     grid-area: bot;
     background-image: url('/faq-accordion-main/assets/images/icon-plus.svg');
@@ -231,6 +264,14 @@ h2 {
     height: 30px;
     border: none;
     background-color: white;
+}
+
+.botãomais1.first {
+    margin-top: -3px;
+}
+
+.botãomais1.third {
+    margin-top: 20px;
 }
 
 .botãoclic1.active {
@@ -248,39 +289,6 @@ h2 {
 .botãoclic4.active {
     background-image: url("/faq-accordion-main/assets/images/icon-minus.svg");
 }
-
-.estrela {
-    grid-area: star;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.estrela img {
-    margin: 0;
-    width: 20px;
-}
-
-.attribution {
-    width: 100%;
-    display: flex;
-    font-size: 11px;
-    background: none;
-    justify-content: center;
-    align-items: end;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    bottom: 0;
-    height: 100%;
-    order: 3;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
-  }
 
 .botãomais1:not(.last) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
