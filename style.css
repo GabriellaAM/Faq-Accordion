@@ -15,9 +15,10 @@ html, body {
 }
 
 .container {
-    display: grid;
-    grid-template: [row1-start] "header" 200px [row1-end];
-    background: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    min-height: 20%;
+    width: 100%;
+    background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    order: 1;
 
 }
 
