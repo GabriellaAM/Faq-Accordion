@@ -76,6 +76,7 @@ html, body {
     align-items: end;
     margin: 0;
     padding: 0;
+    padding-bottom: 10px;
     flex-grow: 1;
     bottom: 0;
     height: 100%;
@@ -130,7 +131,7 @@ h2 {
 .quest1 {
     grid-area: q1;
     overflow: hidden;
-    max-height: 600px; 
+    max-height: auto; 
     margin-bottom: 20px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
@@ -167,7 +168,7 @@ h2 {
 }
 
 .resp2 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .resp2 p {
@@ -185,7 +186,7 @@ h2 {
 .quest3 {
     grid-area: q3;
     overflow: hidden;
-    max-height: 500px; 
+    max-height: auto; 
     margin-top: 20px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
@@ -213,13 +214,13 @@ h2 {
 .quest4 {
     grid-area: q4;
     overflow: hidden;
-    max-height: 500px; 
+    max-height: auto; 
     margin-top: 20px;
     padding: 0;
 }
 
 .resp4 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .resp4 p {
@@ -261,6 +262,10 @@ h2 {
     margin-top: -3px;
 }
 
+.botãomais1.second {
+    margin-top: 15.5px;
+}
+
 .botãomais1.third {
     margin-top: 20px;
 }
@@ -286,6 +291,8 @@ h2 {
     padding-bottom: 10px; 
     margin-bottom: 10px; 
 }
+
+/* Media quares */
 
 @media screen and (max-width: 375px) {
     .container {
