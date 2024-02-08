@@ -37,7 +37,7 @@ html, body {
     position: relative;
     padding-top: 200px;
     width: 100%;
-    background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    background-image: url("/assets/images/background-pattern-desktop.svg");
     order: 1;
     position: relative;
 
@@ -130,7 +130,7 @@ h2 {
 .quest1 {
     grid-area: q1;
     overflow: hidden;
-    max-height: 300px; 
+    max-height: 600px; 
     margin-bottom: 20px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
@@ -144,23 +144,21 @@ h2 {
 
 .resp1 p {
     overflow: hidden;
-    height: 0;
+    max-height: 0;
     padding-top: 10px;
-    transition: height 0.7s ease-out;
+    transition: max-height 1.5s ease-in-out;
 }
 
 .quest1.active .resp1 p {
     overflow: hidden;
     margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+    max-height: 500px; 
 }
 
 .quest2 {
     grid-area: q2;
     overflow: hidden;
-    max-height: 170px; 
+    max-height: auto; 
     margin-top: 20px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);  
@@ -174,23 +172,20 @@ h2 {
 
 .resp2 p {
     overflow: hidden;
-    height: 0;
+    max-height: 0;
     padding-top: 10px;
-    transition: height 0.7s ease-out;
+    transition: max-height 1.5s ease-in-out;
 }
 
 .quest2.active .resp2 p {
-    overflow: hidden;
     margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+    max-height: 800px; 
 }
 
 .quest3 {
     grid-area: q3;
     overflow: hidden;
-    max-height: 190px; 
+    max-height: 500px; 
     margin-top: 20px;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
@@ -204,23 +199,21 @@ h2 {
 
 .resp3 p {
     overflow: hidden;
-    height: 0;
+    max-height: 0;
     padding-top: 10px;
-    transition: height 0.7s ease-out;
+    transition: max-height 1.5s ease-in-out;
 }
 
 .quest3.active .resp3 p {
     overflow: hidden;
     margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+    max-height: 700px;  
 }
 
 .quest4 {
     grid-area: q4;
     overflow: hidden;
-    max-height: 225px; 
+    max-height: 500px; 
     margin-top: 20px;
     padding: 0;
 }
@@ -231,16 +224,14 @@ h2 {
 
 .resp4 p {
     overflow: hidden;
-    height: 0;
+    max-height: 0;
     padding-top: 10px;
-    transition: height 0.7s ease-out;
+    transition: max-height 1.5s ease-in-out;
 }
 .quest4.active .resp4 p {
     overflow: hidden;
     margin: 0;
-    height: max(170px); 
-    transition-duration: 1700ms;
-    transition: height 0.7s ease-out; 
+    max-height: 500px; 
 }
 
 /* Card buttons */
@@ -257,7 +248,7 @@ h2 {
 
 .botãomais1 button {
     grid-area: bot;
-    background-image: url('/faq-accordion-main/assets/images/icon-plus.svg');
+    background-image: url('/assets/images/icon-plus.svg');
     cursor: pointer;
     background-size: 30px;
     width: 30px;
@@ -275,19 +266,19 @@ h2 {
 }
 
 .botãoclic1.active {
-    background-image: url("/faq-accordion-main/assets/images/icon-minus.svg");
+    background-image: url("/assets/images/icon-minus.svg");
 }
 
 .botãoclic2.active {
-    background-image: url("/faq-accordion-main/assets/images/icon-minus.svg");
+    background-image: url("/assets/images/icon-minus.svg");
 }
 
 .botãoclic3.active {
-    background-image: url("/faq-accordion-main/assets/images/icon-minus.svg");
+    background-image: url("/assets/images/icon-minus.svg");
 }
 
 .botãoclic4.active {
-    background-image: url("/faq-accordion-main/assets/images/icon-minus.svg");
+    background-image: url("/assets/images/icon-minus.svg");
 }
 
 .botãomais1:not(.last) {
@@ -296,10 +287,8 @@ h2 {
     margin-bottom: 10px; 
 }
 
-
 @media screen and (max-width: 375px) {
     .container {
-        background: url("/faq-accordion-main/assets/images/background-pattern-mobile.svg");
-    
+        background: url("/assets/images/background-pattern-mobile.svg");
     }
   }
