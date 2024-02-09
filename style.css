@@ -37,7 +37,7 @@ html, body {
     position: relative;
     padding-top: 200px;
     width: 100%;
-    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-image: url("./assets/images/background-pattern-desktop.svg");
     order: 1;
     position: relative;
 
@@ -249,7 +249,7 @@ h2 {
 
 .botãomais1 button {
     grid-area: bot;
-    background-image: url('/assets/images/icon-plus.svg');
+    background-image: url('./assets/images/icon-plus.svg');
     cursor: pointer;
     background-size: 30px;
     width: 30px;
@@ -271,19 +271,19 @@ h2 {
 }
 
 .botãoclic1.active {
-    background-image: url("/assets/images/icon-minus.svg");
+    background-image: url("./assets/images/icon-minus.svg");
 }
 
 .botãoclic2.active {
-    background-image: url("/assets/images/icon-minus.svg");
+    background-image: url("./assets/images/icon-minus.svg");
 }
 
 .botãoclic3.active {
-    background-image: url("/assets/images/icon-minus.svg");
+    background-image: url("./assets/images/icon-minus.svg");
 }
 
 .botãoclic4.active {
-    background-image: url("/assets/images/icon-minus.svg");
+    background-image: url("./assets/images/icon-minus.svg");
 }
 
 .botãomais1:not(.last) {
@@ -296,6 +296,6 @@ h2 {
 
 @media screen and (max-width: 375px) {
     .container {
-        background: url("/assets/images/background-pattern-mobile.svg");
+        background: url("./assets/images/background-pattern-mobile.svg");
     }
   }
