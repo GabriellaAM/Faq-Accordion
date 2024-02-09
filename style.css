@@ -53,7 +53,8 @@ html, body {
     [row4-start] "q3 q3 bot" [row4-end]
     [row5-start] "q4 q4 bot" auto [row5-end]
     / 18% auto 50px;
-    width: min(350px, 80%);
+    max-width: 40%;
+    min-width: 325px;
     padding: 5px 30px 10px 30px;
     box-sizing: border-box;
     background-color: white;
@@ -267,7 +268,7 @@ h2 {
 }
 
 .botãomais1.third {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .botãoclic1.active {
@@ -292,10 +293,14 @@ h2 {
     margin-bottom: 10px; 
 }
 
-/* Media quares */
+/* Media queries */
 
 @media screen and (max-width: 375px) {
     .container {
         background: url("./assets/images/background-pattern-mobile.svg");
+    }
+
+    .botãomais1.third {
+        margin-top: 20px;
     }
   }
