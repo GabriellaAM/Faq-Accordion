@@ -1,12 +1,9 @@
 # Frontend Mentor - FAQ accordion
 
-![Design preview for the FAQ accordion coding challenge](./design/desktop-preview.jpg)
-
 ## Table of contents
 
 - [Visão Geral](#visão-geral)
   - [O desafio](#o-desafio)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [Meu Processo](#meu-processo)
   - [Construído com?](#construído-com?)
@@ -16,11 +13,7 @@
 
 ## Visão Geral
 
-### Screenshot
-
 <img src="./design/screenshot.png">
-
-<img src="./design/screenshotmobile.jpg">
 
 ## O desafio
 
@@ -53,13 +46,13 @@ Os usuários devem ser capazes de:
 
 ### O que eu aprendi?
 
-Pude desenvolver meus conhecimentos de Javascript, pois ainda possuo dificuldades entendendo sua lógica. Nesse projeto aprendi alguns métodos para fazer com que um botão realize uma determinada ação de acordo com os comandos escritos.
+Pude desenvolver meus conhecimentos de JavaScript, pois ainda possuo dificuldades entendendo sua lógica. Nesse projeto aprendi alguns métodos para fazer com que um botão realize uma determinada ação de acordo com os comandos escritos.
 
 Ainda, foi possível evoluir minhas habilidades de CSS. Compreendi melhor o funcionamento das propriedades: "position", "overflow-y", "overflow-x" e "max-height". Além de praticar e entender melhor CSS Grid e Flexbox.
 
 ### O que preciso focar mais?
 
-Pretendo continuar praticando Flexbox e CSS Grid, para que no futuro consiga utilizá-los mais facilmente. Também irei estudar e praticar Javascript para que possa escrever códigos mais otimizados.
+Pretendo continuar praticando Flexbox e CSS Grid, para que no futuro consiga utilizá-los mais facilmente. Também irei estudar e praticar JavaScript para que possa escrever códigos mais otimizados.
 
 ## Autor
 
