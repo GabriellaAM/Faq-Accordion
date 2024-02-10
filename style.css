@@ -52,8 +52,8 @@ html, body {
     [row3-start] "q2 q2 bot" [row3-end]
     [row4-start] "q3 q3 bot" [row4-end]
     [row5-start] "q4 q4 bot" auto [row5-end]
-    / 18% auto 50px;
-    max-width: 40%;
+    / auto auto 50px;
+    max-width: 39.5%;
     min-width: 325px;
     padding: 5px 30px 10px 30px;
     box-sizing: border-box;
@@ -97,6 +97,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin-right: 20px;
 }
 
 .estrela img {
