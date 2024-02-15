@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion
 
-## Table of contents
+## Sumário
 
 - [Visão Geral](#visão-geral)
   - [O desafio](#o-desafio)
